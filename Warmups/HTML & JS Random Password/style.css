@@ -1,0 +1,16 @@
+.form {
+    width: 200px;
+    margin: auto;
+}
+.btn {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.txt {
+    color: red;
+    margin: auto;
+    font-weight: bold;
+}
+#pass {
+    text-align: center;
+}

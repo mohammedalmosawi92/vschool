@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+                    <form autocomplete="off">
+                        <div class="form-group">
+                            <label for="username">User Name</label>
+                            <input type="text" name="username" id="username" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" class="form-control">
+                        </div>
+                        
+                        <label for="gender">Gender</label>
+                        <div class="radio">
+                        <label for="male" class="pad"><input type="radio" id="male" class="gender" name="gender" value="Male">Male</label>
+                        <label for="female" class="pad"><input type="radio" id="female" class="gender" name="gender" value="Female">Female</label>
+                        </div>
+                        <label for="location">Location</label><br>
+                        <input type="checkbox" class="location" id="baghdad" name="location[]" value="Baghdad">
+                        <label for="baghdad" class="pad">Baghdad</label><br>
+                        
+                        <input type="checkbox" class="location" id="paris" name="location[]" value="Paris"><label for="paris" class="pad">Paris</label><br>
+                        
+                        <input type="checkbox" class="location" id="tripoli" name="location[]" value="Tripoli"><label for="tripoli" class="pad">Tripoli</label><br>
+                        <div class="form-group">
+                        <select id="diet">
+                            <option value="vegetarian">vegetarian</option>
+                            <option value="kosher">kosher</option>
+                            <option value="lactose-free">lactose free</option>
+                        </select>
+                        </div>
+                        <button class="btn btn-primary" id="submit">Submit</button>
+                    </form>
+              </div>
+           
+        <script
+                src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous">
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

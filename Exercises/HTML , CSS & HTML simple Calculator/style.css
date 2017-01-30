@@ -1,0 +1,16 @@
+
+.cal {
+    text-align: center;
+}
+.cal input {
+    color: red;
+    width: 100px;
+}
+.submit {
+    text-align: center;
+    padding: 10px 0px;
+}
+span {
+    background: black;
+    color: red;
+}

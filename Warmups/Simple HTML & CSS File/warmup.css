@@ -1,0 +1,12 @@
+p {
+    color: red;
+    background-color: deepskyblue;
+    font-size: 20px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid deepskyblue;
+}
+h1 {
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+.first {
+    max-width: 943px;
+    height: 100px;
+    background: pink;
+    border: 20px solid transparent;
+    margin-bottom: 5px;
+}
+.second {
+    display: inline-block;
+    width: 203px;
+    background-color: darkred;
+    height: 100px;
+    border: 20px solid transparent;
+}
+.third {
+    display: inline-block;
+    width: 410px;
+    height: 100px;
+    background-color: lightskyblue;
+    border: 20px solid transparent;
+}
+.fourth1, .fourth2 {
+    display: inline-block;
+    border: 30px solid transparent;
+    height: 100px;
+}
+.fourth1 {
+    background-color: greenyellow;
+    width: 615px;
+}
+.fourth2 {
+    background-color: burlywood;
+    width: 204px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 10px 100px;
+}

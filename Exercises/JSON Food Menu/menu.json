@@ -1,0 +1,47 @@
+{
+    "appetizers": [{
+           "name" : "Smoked salmon",
+            "ingredients" : ["smoked salmon", "soft cheese", "lemon"],
+            "description" : "Five minutes is all you need to whip up this creamy fish dish, great served as a dip or starter",
+    }, {
+        "name": "Mini chocolate",
+        "ingredients":["dark chocolate","butter","flour","egg"],
+        "description":"A squidgy dark chocolate traybake dotted with spicy crystallised ginger",
+    }],
+    "cold sandwiches" : [{
+        "name" : "Yummy bread",
+        "ingredients":[" is a staple food prepared from a dough of flour and water"],
+        "description": "in the form of a roll, pita or wrap",
+    }, {
+        "name": "Fresh & Feisty Ham Sandwich",
+        "ingredients":["Ham","bread","cheese"],
+        "description":"",
+    }],
+    "hot sandwiches" : [{
+        "name": "Cuban-Style Ham",
+        "ingredients":["juice","garlic","oregano","cumin","ham"],
+        "description":"A coat of yellow mustard is spread on the bread",
+    }, {
+        "name": "Panini with Turkey and Cheese",
+        "ingredients":["mayonnaise","bread slices","Turkey","Cheese"],
+        "description":"A creamy spread full of Parmesan and fresh basil cozies up to turkey",
+    }],
+    "desserts" : [{
+        "name": "Tiramisu II",
+        "ingredients":["egg yolks","white sugar","heavy cream","milk"],
+        "description":"Mascarpone custard layered with whipped cream and rum and coffee soaked ladyfingers.",
+    }, {
+        "name": "chocolate cake",
+        "ingredients":["chocolate","cream","milk","egg"],
+        "description":"delicious yumy chocolate cake",
+    }],
+    "drinks": [{
+        "name": "Banana Smoothie",
+        "ingredients":["Banana","milk"],
+        "description":"delicious drink and easily made",
+    }, {
+        "name": "orange juice",
+        "ingredients":["orage"],
+        "description":"great favor",
+    }]
+}

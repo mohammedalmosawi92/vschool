@@ -1,0 +1,280 @@
+html {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #90CAF9;
+    width: 100%;
+    background-image: url(mario-background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    color: white;
+    background: red;
+    padding: 0.33em 0em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    border-radius: 10px;
+    text-decoration: underline;
+    margin-bottom: 0.37em;
+}
+article {
+    vertical-align: top;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin: 0em 3.5em;
+    margin-bottom: 3em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.enemies {
+    background-color: #BBDEFB;
+    width: 22%;
+    text-align: center;
+    border: 0.35em solid black;
+    border-radius: 20px;
+}
+.enemies img {
+    width: 55%;
+    height: 25vh;
+}
+.enemy-name {
+    color: white;
+    font-size: 1.18em;
+    background: red;
+    width: 45%;
+    margin: auto;
+    border-radius: 5px;
+    font-weight: 900;
+    padding: 0.15em;
+    border: 0.15em solid black;
+}
+.caught-input {
+    border: 0.15em solid black;
+    width: 40%;
+    text-align: center;
+    background: red;
+    color: white;
+    padding: 0.15em 0.75em;
+    border-radius: 5px;
+}
+.total-section {
+    width: 25%;
+    margin: auto;
+    background: lightgreen;
+    text-align: center;
+    border: 0.35em solid black;
+    padding-top: 0.9em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.total-price {
+    color: white;
+    font-size: 1.2em;
+    background: red;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    font-weight: 900;
+    border: 0.15em solid black;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0.15em;
+}
+.total-price img {
+    width: 10%;
+}
+footer {
+    color: white;
+    background: #F44336;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-decoration: underline;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0em 5em;
+    margin-top: 3em;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+    align-content: center;
+}
+@media (max-width: 1130px) {
+    .enemies {
+        width: 25%;
+    }
+    .total-price {
+        width: 60%;
+    }
+}
+@media (max-width: 1000px) {
+    .enemies {
+        width: 30%;
+    }
+}
+@media (max-width: 870px) {
+    .total-price {
+        width: 65%;
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 768px) and (min-width: 450px) {
+    * {
+        font-size: 1em;
+    }
+    article {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .enemies{
+        width: 55%;
+        margin-bottom: 2em;
+    }
+    footer {
+        position: static;
+        bottom: 0;
+        padding: 0px 80px;
+        font-size: 1.3em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .total-section {
+        width: 45%;
+    }
+    .total-price {
+        width: 50%;
+        font-size: 1em;
+    }
+}
+@media(max-width: 449px) and (min-width: 147px) {
+    * {
+        font-size: 0.95em;
+    }
+    body {
+        background-repeat: repeat-y;
+    }
+    article {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .enemies{
+        width: 80%;
+        margin-bottom: 2em;
+    }
+    footer {
+        position: static;
+        bottom: 0;
+        padding: 0px 20px;
+        font-size: 1.1em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .total-section {
+        width: 80%;
+    }
+    .total-price {
+        font-size: 1.1em;
+    }
+}
+@media(max-device-width: 414px) {
+   *{
+       font-size: 0.9em;
+    }
+    
+    body {
+        background-repeat: repeat-y;
+    }
+    .total-section {
+        width: 80%;
+    }
+    .total-price {
+        font-size: 2em;
+    }
+    .enemies{
+        width: 80%;
+        height: 48vh;
+        margin-bottom: 20px;
+    }
+    .enemies img {
+        width: 50%;
+        height: 23vh;
+    }
+    .caught-input,.enemy-name {
+        font-size: 1.5em;
+    }
+    body {
+        background-color: #90CAF9;
+    }
+    footer {
+        position: static;
+        bottom: 0;
+        padding: 0px 50px;
+        font-size: 1.3em;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+@media(max-device-width: 768px) and (min-device-width: 418px) {
+    * {
+        font-size: 1.1em;
+    }
+    body {
+        background-repeat: repeat-y;
+    }
+    article {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .enemies{
+        width: 70%;
+        margin-bottom: 2em;
+        height: 55vh;
+    }
+    footer {
+        position: static;
+        bottom: 0;
+        padding: 0px 80px;
+        font-size: 1.3em;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .total-section {
+        width: 70%;
+    }
+    .total-price {
+        width: 50%;
+        font-size: 1.2em;
+    }
+}
+::-webkit-input-placeholder {
+   color: white;
+}
+:-moz-placeholder {
+   color: white;  
+}
+::-moz-placeholder {
+   color: white;  
+}
+:-ms-input-placeholder {  
+   color: white;  
+}
+/* Mohammed Aziz Almosawi copyright @ all rights reserved*/

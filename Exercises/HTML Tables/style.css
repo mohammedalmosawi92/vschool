@@ -1,0 +1,28 @@
+table {
+    border: 1px solid lightgreen;
+    text-align: center;
+    width: 50%;
+    border-spacing: 0;
+    font-size: 18px;
+    margin: auto;
+}
+td,th {
+    border: 1px solid lightgreen;
+    border-left: 0;
+    border-right: 0;
+}
+th {
+    background: lightgreen;
+    color: white;
+}
+tr:nth-child(3) {
+    background: #B9F6CA;
+    color: white;
+}
+tr:nth-child(5) {
+    background: #B9F6CA;
+    color: white;
+}
+caption {
+    color: #00E676;
+}

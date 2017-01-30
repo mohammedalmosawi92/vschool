@@ -1,0 +1,24 @@
+.nav-nav {
+    background: #2c3e50;
+    color: white !important;
+    font-weight: 900;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.second {
+    height: 60vh;
+    background: #18bc9c;
+    color: white;
+    padding: 20px;
+}
+.txt {
+    font-size: 2em;
+    font-weight: 800;
+}
+p img {
+    width: 50%;
+}
+.white-txt {
+   color: white !important; 
+}
