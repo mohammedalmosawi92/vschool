@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+/*.box {
+    width: 50%;
+    height: 150px;
+    float: left;
+    border: 5px solid white;
+}*/
+body {
+    text-align: center;
+}
+.box {
+    width: 49%;
+    height: 150px;
+    display: inline-block;
+    padding: 10px;
+}
+.blue {
+    background: blue
+}
+.red {
+    background: red
+}
+.yellow {
+    background: yellow
+}
+.green {
+    background: green
+}
