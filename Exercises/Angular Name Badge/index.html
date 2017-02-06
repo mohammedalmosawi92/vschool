@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="app">
+    <div class="container" ng-controller="mainController">
+        <div class="containerOne">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="First Name" ng-model="firstName" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Last Name" ng-model="lastName" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="email" placeholder="Email" ng-model="email" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Place of Birth" ng-model="placeOfBirth" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="number" placeholder="Phone" ng-model="phone" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Favorite Food" ng-model="favoriteFood" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea class="form-control" ng-model="textarea">Tell us about yourself</textarea>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <input type="button" ng-click="submit()" value="Submit" class="btn btn-primary">
+                </div>
+            </div>
+        </div>
+        <div class="containerTwo" ng-if=(submited)>
+            <div class="row">
+                <div class="col-md-12">
+                    <div>Badge :</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>Name : {{firstName + " " + lastName}}</div>
+                </div>
+                <div class="col-md-6">
+                    <div>Phone : {{phone}}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>Place of Birth : {{placeOfBirth}}</div>
+                </div>
+                <div class="col-md-6">
+                    <div>Favorite Food : {{favoriteFood}}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div>Email : {{email}}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea>{{textarea}}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

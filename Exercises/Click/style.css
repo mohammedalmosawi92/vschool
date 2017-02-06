@@ -1,0 +1,18 @@
+.start {
+    margin-top: 10px;
+}
+input {
+    margin-bottom: 10px;
+    text-align: center;
+}
+body {
+    background-image: url(pexels-photo.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form {
+    background: white;
+    padding: 20px 30px;
+    margin-top: 20px;
+}

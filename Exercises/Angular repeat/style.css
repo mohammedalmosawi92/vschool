@@ -1,0 +1,14 @@
+.handler {
+    color: blue;
+}
+.rank {
+    color : aqua;
+    font-size: 20px;
+}
+.clan {
+    color: deepskyblue;
+}
+.player {
+    margin-bottom: 50px;
+    margin-left: 20px;
+}

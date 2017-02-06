@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="app">
+    <div ng-controller="ctrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <h1>Mom's Shopping List</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" placeholder="Type Something" ng-model="listName">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="button" class="btn btn-success" value="Add" ng-click="addList()">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div ng-repeat="listTodo in lists track by $index">
+                                <p><input type="button" ng-click="remove($index)" value="X" class="btn btn-danger"><span ng-click="update()">{{listTodo}}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
