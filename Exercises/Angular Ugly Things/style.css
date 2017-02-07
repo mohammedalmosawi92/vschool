@@ -1,0 +1,24 @@
+body {
+    background-image: url(pexels-photo-131683.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+h1 {
+    margin-bottom: 50px;
+}
+img {
+    width: 200px;
+}
+.btn {
+    margin-top: 20px;
+}
+.image-part {
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
