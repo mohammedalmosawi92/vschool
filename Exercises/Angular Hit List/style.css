@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(road-fog-foggy-mist.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    margin-bottom: 100px;
+}
+.hit-item img {
+    width: 100%;
+    height: 40vh;
+}
+.hit-item {
+    margin-bottom: 50px;
+}
+.title{
+    position: relative;
+    bottom: 38px;
+    color: white;
+    background-color: rgba(24,116,255,0.5);
+    padding: 5px;
+    font-size: 20px;
+    font-size: bolder;
+}
+.header-image img {
+    width: 100%;
+    height: 10vh;
+}
+.main-header {
+    background: black;
+    height: 10vh;
+    padding-bottom: 10px;
+}
+.main-header h1 {
+    color: red;
+}

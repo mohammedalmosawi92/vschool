@@ -17,29 +17,51 @@
                         <h1>Todo List</h1>
                     </div>
                 </div>
+                <div class="add">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <input type="text" ng-model="text" class="form-control" placeholder="New Post">
+                        </div>
+                        <div class="col-md-2">
+                            <button ng-click="add()" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
                 <div ng-init="loadData()" class="reqData">
-                    <div class="row" ng-repeat="item in items track by $index">
-                        <div class="col-md-4">
-                           <input ng-model="item.title" ng-init="item.title" ng-show="editInput[item._id]">
-                            <div ng-show="dataupdateButton[$index]">{{item.title}}</div>
+                    <div class="header-info">
+                        <div class="row text-center">
+                            <div class="col-md-1">
+                                <h3>#</h3>
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Title</h3>
+                            </div>
+                            <div class="col-md-2">
+                                <h3>Edit</h3>
+                            </div>
+                            <div class="col-md-2">
+                                <h3>Delete</h3>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <button ng-click="delete(item._id)" class="btn btn-danger">Delete</button>
+                    </div>
+                    <div class="row text-center" ng-repeat="item in items track by $index">
+                        <div class="col-md-1">
+                            <span>{{$index}}</span>
                         </div>
-                        <div class="col-md-4">
-                            <button ng-click="updated(item._id,$index)" class="btn btn-primary" ng-show="dataupdateButton[$index]">update</button>
-                            <button ng-click="addUpdate(item._id,item.title,$index)" ng-show="editInput[item._id]" class="btn btn-info">update</button>
+                        <div class="col-md-7">
+                            <span ng-show="dataupdateButton[$index]">{{item.title}}</span>
+                            <input ng-model="item.title" ng-init="item.title" ng-show="editInput[item._id]" class="form-control text-center">
+                        </div>
+                        <div class="col-md-2">
+                            <i ng-click="updated(item._id,$index)" class="glyphicon glyphicon-pencil " ng-show="dataupdateButton[$index]"></i>
+                            <i ng-click="addUpdate(item._id,item.title,$index)" ng-show="editInput[item._id]" class="glyphicon glyphicon-ok "></i>
+                        </div>
+                        <div class="col-md-2">
+                            <i ng-click="delete(item._id)" class="glyphicon glyphicon-trash "></i>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="text" ng-model="text" class="form-control" placeholder="New Post">
-                    </div>
-                    <div class="col-md-6">
-                        <button ng-click="add()" class="btn btn-primary">Add</button>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
