@@ -1,0 +1,20 @@
+h1 {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 40px;
+}
+body {
+    background-image: url(thumb-1920-273289.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.pokemon-name {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.pokemon-list {
+    margin-top: 15px;
+}

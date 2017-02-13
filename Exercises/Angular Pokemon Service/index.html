@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="app" ng-controller="ctrl">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>Pokemon Service</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="row text-center">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Add Pokemon" ng-model="pokemonName">
+                    </div>
+                    <div class="col-md-2">
+                        <button ng-click="add()" class="btn btn-primary">Add</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button ng-click="remove()" class="btn btn-danger">Remove</button>
+                    </div>
+                </div>
+                <div class="pokemon-list">
+                    <div class="row" ng-repeat="x in list">
+                        <div class="col-md-1">
+                            <div class="pokemon-name">
+                                {{$index + 1}}-
+                            </div>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="pokemon-name">
+                                {{x}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
