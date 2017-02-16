@@ -23,13 +23,21 @@ h1 {
     color: white
 }
 .navbar {
-    background: #69F0AE;
+    background: #00BFA5;
     color: white;
     font-size: 20px;
 }
 .navbar a {
     color: white;
 }
-.navbar li a:hover,.navbar li a:active {
-    background: #00E676;
+.navbar li a:visited {
+    background: #009688;
 }
+.navbar li a:hover {
+    background: #009688;
+}
+
+.navbar li a:active {
+    background: #009688;
+}
+
