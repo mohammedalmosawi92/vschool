@@ -6,5 +6,5 @@ app.config(function($routeProvider) {
     })
 })
 app.controller("homeCtrl", function($scope) {
-    $scope.msg = "BARCELONA"
+    $scope.msg = ""
 })

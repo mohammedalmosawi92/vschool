@@ -11,5 +11,5 @@ app.config(function($locationProvider,$routeProvider) {
 })
 
 app.controller("homeCtrl", function($scope) {
-    $scope.msg = "BARCELONA"
+    $scope.msg = "Welcome to Barcelona"
 })

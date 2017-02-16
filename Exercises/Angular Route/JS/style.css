@@ -1,23 +1,35 @@
 body {
-    background-image: url(water-blue-ocean.jpg);
+    background-image: url(pexels-photo-131683.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
 }
+
 img {
-    width: 100%;
-    height: 100vh;
+    width: 80%;
+    height: 50vh;
+    border-radius: 5px;
 }
+
 .about {
     font-size: 20px;
     margin-top: 50px;
     color: white;
     text-align: justify;
 }
+
 h1 {
     color: white
 }
 .navbar {
-    background: white;
+    background: #69F0AE;
+    color: white;
+    font-size: 20px;
+}
+.navbar a {
+    color: white;
+}
+.navbar li a:hover,.navbar li a:active {
+    background: #00E676;
 }
