@@ -14,7 +14,7 @@ var list = [
         lastName: "aziz",
         living: true,
         bountyAmount: 100,
-        type: 100
+        type: "sith"
     },
     {
         id: uuid.v4(),
@@ -22,7 +22,7 @@ var list = [
         lastName: "khaled",
         living: false,
         bountyAmount: 100,
-        type: 100
+        type: "jedi"
     }
 ]
 module.exports = list
