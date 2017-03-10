@@ -1,22 +1,19 @@
-var uuid = require("uuid");
-var menu = [
-    {
-        id: uuid.v4(),
-        name: "pasta",
-        cost: 10,
-        type: "main course"
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
+
+var MenuSchema = new Schema({
+    name: {
+        type: String,
+        required: true
     },
-    {
-        id: uuid.v4(),
-        name: "chocolate cake",
-        cost: 10,
-        type: "dessert"
+    cost: {
+        type: Number,
+        required: true
     },
-    {
-        id: uuid.v4(),
-        name: "pizza",
-        cost: 10,
-        type: "appetizer"
+    type: {
+        type: String,
+        required: true
     }
-]
-module.exports = menu
+})
+
+module.exports = mongoose.model("Menu", MenuSchema);
