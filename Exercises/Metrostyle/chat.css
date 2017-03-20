@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    background-color: #95569C;
+}
+.chat {
+    text-align: center
+}
+
+.chat i {
+    color: white;
+    font-size: 80px;
+    margin-top: 200px;
+}

@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    background-color: #3D969E
+}
+.mail {
+    text-align: center
+}
+
+i {
+    color: white;
+    font-size: 80px;
+    margin-top: 200px;
+}

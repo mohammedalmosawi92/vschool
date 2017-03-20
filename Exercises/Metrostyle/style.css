@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(water-blue-ocean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: white
+}
+
+h3 {
+    color: white
+}
+
+.manga-now {
+    color: white;
+}
+
+li {
+    color: white !important;
+}
+
+.col-md-1 {
+    padding: 2px;
+}
+
+.col-md-2 {
+    padding: 3px;
+}
+
+.light-blue {
+    background-color: #3D969E;
+    width: 100%;
+    height: 14vh;
+}
+
+.light-blue i {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 65px;
+    font-size: 30px
+}
+
+.blue {
+    background-color: #4047B1;
+    height: 14vh;
+    width: 100%;
+}
+
+.green {
+    background-color: #55B03B;
+    height: 14vh;
+    width: 100%;
+}
+
+.hyena {
+    background-image: url(norman-carr-safaris-liuwa-plain-burrard-lucas-11.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15vh;
+}
+
+.dark-blue {
+    background-color: #3B378E;
+    height: 14vh;
+}
+
+.dark-purple {
+    background-color: #5D61CC;
+    height: 14vh;
+}
+
+.purple {
+    background-color: #95569C;
+    height: 14vh;
+}
+
+.anthor-blue {
+    background-color: #3562A3;
+    height: 14vh;
+}
+
+.orange {
+    background-color: #E88252;
+    height: 14vh;
+}
+
+.third-row {
+    margin-top: 5px;
+}
+
+.red {
+    background-color: #A94A44;
+    height: 14vh;
+}
+
+.lighter-blue {
+    background-color: #3880CA;
+    height: 14vh;
+}
+
+.train {
+    background-image: url(Diesel-Train-In-Winter-Wallpaper-Picture.jpg);
+    background-size: contain;
+    height: 14vh;
+}
+
+.flower {
+    background-image: url(sun-flower-1536088_960_720.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15vh;
+}
+
+.street {
+    background-image: url(calgary-people-2-street-rob-moses-photography.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15vh;
+}
+
+.chair {
+    background-image: url(1.jpg);
+    background-size: contain;
+    height: 14vh;
+}
+
+.small-glypicon {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.small-glypicon i {
+    margin-top: 25px;
+}
+
+.gly i {
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.num {
+    font-size: 30px;
+    color: white;
+}
+
+.day {
+    font-size: 12px;
+    color: white;
+}
+
+.orange-one i {
+    color: white;
+    margin-top: 20px;
+    margin-left: 65px;
+    font-size: 30px
+}
+
+.purple-one i {
+    color: white;
+    color: white;
+    margin-top: 20px;
+    margin-left: 65px;
+    font-size: 30px
+}
+
+.mail:hover,
+.mail:active {
+    border: 2px solid white;
+}
+
+.user:hover,
+.user:active {
+    border: 2px solid white;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    font-weight: 700;
+}
+
+img {
+    height: 100vh;
+    background-size: cover;
+}
+
+.mid {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.mid-left {
+    margin-left: 30px;
+}
+
+.mid-right {
+    margin-right: 30px;
+}
