@@ -1,0 +1,43 @@
+<div class="container" ng-init="loadData()">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1>To do List</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="my-list">
+                <div class="row" ng-repeat="item in list track by $index">
+                    <div class="col-md-12">
+                        <div ng-if="!item.isEdit">
+                            <h3>{{item.name}}</h3>
+                            <div>{{item.cost | currency}}</div>
+                            <div>{{item.isDone}}</div>
+                            <div class="text-right">
+                                <button ng-click="remove(item._id)" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
+                                <button ng-click="edit($index)" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i></button>
+                            </div>
+
+                        </div>
+                        <div ng-if="item.isEdit">
+                            <input class="form-control" placeholder="name" ng-model="item.name">
+                            <input class="form-control" placeholder="cost" ng-model="item.cost">
+                            <div class="text-right">
+                                <button ng-click="save(item._id, item)" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <input type="text" placeholder="name" class="form-control" ng-model="userInput.name">
+                    <input type="number" placeholder="cost" class="form-control" ng-model="userInput.cost">
+                    <div class="add-btn">
+                        <button ng-click="add()" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
